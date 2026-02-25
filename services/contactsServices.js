@@ -4,8 +4,6 @@ import { nanoid } from "nanoid";
 
 const contactsPath = path.join(process.cwd(), "./db/contacts.json");
 
-// console.log(contactsPath);
-
 async function listContacts() {
   // Повертає масив контактів.
   const data = await fs.readFile(contactsPath, "utf-8");
@@ -42,14 +40,6 @@ async function addContact({ name, email, phone }) {
   // Повертає об'єкт доданого контакту (з id).
 
   const contactsList = await listContacts();
-
-  //   if (
-  //     contactsList.findIndex((contact) => contact.email === email) !== -1 ||
-  //     contactsList.findIndex((contact) => contact.phone === phone) !== -1
-  //   ) {
-  //     console.log("such contact already exists in the base");
-  //     return null;
-  //   }
 
   const newContact = {
     name,
