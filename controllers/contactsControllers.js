@@ -1,19 +1,11 @@
-const contactsService = require("../services/contactsServices.js");
+import contactsService from "../services/contactsServices.js";
 
-const getAllContacts = (req, res) => {};
+export const getAllContacts = (req, res) => {};
 
-const getOneContact = (req, res) => {};
+export const getOneContact = (req, res) => {};
 
-const deleteContact = (req, res) => {};
+export const deleteContact = (req, res) => {};
 
-const createContact = (req, res) => {};
+export const createContact = (req, res) => {};
 
-const updateContact = (req, res) => {};
-
-module.exports = {
-  getAllContacts,
-  getOneContact,
-  deleteContact,
-  createContact,
-  updateContact,
-};
+export const updateContact = (req, res) => {};
